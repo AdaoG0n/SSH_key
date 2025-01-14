@@ -6,6 +6,7 @@
 <div align="center"> 
 
   # Guia: Como Configurar uma Chave SSH no Ubuntu para o GitHub
+</div>
 
 Este guia apresenta, passo a passo, como criar uma chave SSH no Ubuntu e configurá-la para funcionar com o GitHub.
 
@@ -15,6 +16,8 @@ Este guia apresenta, passo a passo, como criar uma chave SSH no Ubuntu e configu
 <div align="center"> 
   
 ## 1. Verificar se já existe uma chave SSH
+</div>
+
 Antes de criar uma nova chave SSH, é necessário verificar se já existe uma:
 
 ```shell
@@ -31,6 +34,7 @@ ls -al ~/.ssh
 <div align="center"> 
 
 ## 2. Criar uma Nova Chave SSH
+</div>
 
 Para criar uma nova chave SSH, usar o comando abaixo:
 
@@ -55,6 +59,7 @@ ssh-keygen -t ed25519 -C "seu-email@example.com"
 <div align="center"> 
 
 ## 3. Adicionar a Chave SSH ao Agente SSH
+</div>
 
 Para garantir que a chave funcione corretamente, é necessário adicioná-la ao agente SSH:
 
@@ -74,6 +79,8 @@ Para garantir que a chave funcione corretamente, é necessário adicioná-la ao 
 <div align="center"> 
 
 ## 4. Copiar a Chave Pública
+</div>
+
 A chave pública será adicionada ao GitHub. Para copiá-la, usar o comando:
 
 ```shell
@@ -88,6 +95,7 @@ Copiar o conteúdo exibido no terminal (começa com `ssh-ed25519` ou `ssh-rsa`).
 <div align="center"> 
 
 ## 5. Adicionar a Chave ao GitHub
+</div>
 
 1. Aceder às [Configurações de SSH no GitHub](https://github.com/settings/keys).
 2. Clicar em **"New SSH key"**.
@@ -102,6 +110,7 @@ Copiar o conteúdo exibido no terminal (começa com `ssh-ed25519` ou `ssh-rsa`).
 <div align="center"> 
 
 ## 6. Testar a Conexão com o GitHub
+</div>
 
 Para verificar se a configuração foi concluída com sucesso, testar a conexão:
 
@@ -121,6 +130,8 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 <div align="center"> 
 
 ## Notas Finais
+</div>
+
 - **Segurança**: Nunca partilhar a chave privada (`id_ed25519` ou `id_rsa`). Apenas a chave pública (`.pub`) deve ser utilizada para autenticação.
 - **Múltiplas Contas no GitHub**: Para utilizar várias contas, configurar ficheiros `config` no diretório `~/.ssh`. Consultar a [documentação oficial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#platform-specific-setup) para mais detalhes.
 
