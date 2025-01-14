@@ -5,7 +5,7 @@
 ![](https://github.com/AdaoG0n/AdaoG0n/blob/main/assests/bar.png)
 <div align="center"> 
 
-  # Guia: Como Configurar uma Chave SSH no Ubuntu para o GitHub
+  # Como Configurar uma Chave SSH no Ubuntu para o GitHub
 </div>
 
 Este guia apresenta, passo a passo, como criar uma chave SSH no Ubuntu e configurá-la para funcionar com o GitHub.
